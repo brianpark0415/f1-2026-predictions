@@ -32,7 +32,7 @@ Trained on 1,838 driver-race records from 2022-2025:
 - **Qualifying Performance:** Grid position, quali gap to pole
 - **Driver Form:** Rolling avg finish/quali over last 5 races, recent points
 - **Constructor Strength:** Team championship position, recent form, podium rate
-- **Circuit History:** Driver's avg finish at specific circuit
+- **Circuit History:** Driver's avg finish at a specific circuit
 - **Reliability:** DNF rate, podium rate
 
 ### Model Architecture
@@ -116,22 +116,16 @@ Top predictive features discovered:
 
 ### 2026 Regulation Impact
 The model handles the 2026 regulation reset by:
-- Reducing trust in constructor hierarchy early in season
+- Reducing trust in the constructor hierarchy early in the season
 - Increasing weight on driver skill vs car performance
 - Updating confidence as real 2026 data accumulates
-
-### Why Atlassian / Williams?
-This project directly relates to Atlassian's F1 sponsorship:
-- Williams (Atlassian Williams Racing) features prominently in predictions
-- Model can analyse Williams' 2026 competitiveness vs historical performance
-- Demonstrates applied ML in the exact domain Atlassian sponsors
 
 ---
 
 ## 📈 Future Improvements
 
 - [ ] Incorporate weather data (rain = massive equaliser)
-- [ ] Add pit stop strategy modeling
+- [ ] Add pit stop strategy modelling
 - [ ] Real-time updates during race weekends
 - [ ] Web dashboard for interactive predictions
 - [ ] Ensemble multiple models (XGBoost + LightGBM + Neural Net)
