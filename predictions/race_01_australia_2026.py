@@ -26,9 +26,9 @@ print(f"{'='*60}\n")
 # LOAD MODEL
 # ============================================================
 print("Loading trained model...")
-model = joblib.load('../models/xgb_f1_podium_predictor.pkl')
+model = joblib.load('models/xgb_f1_2026_final.pkl')
 
-with open('../models/feature_list.txt', 'r') as f:
+with open('models/feature_list.txt', 'r') as f:
     feature_cols = [line.strip() for line in f]
 
 print(f"✅ Model loaded with {len(feature_cols)} features\n")
@@ -37,13 +37,13 @@ print(f"✅ Model loaded with {len(feature_cols)} features\n")
 # GET QUALIFYING RESULTS
 # ============================================================
 print(f"Fetching {YEAR} qualifying results...")
-fastf1.Cache.enable_cache('../data/fastf1_cache')
+fastf1.Cache.enable_cache('data/fastf1_cache')
 
 # ============================================================
 # GET QUALIFYING RESULTS
 # ============================================================
 print(f"Fetching {YEAR} qualifying results...")
-fastf1.Cache.enable_cache('../data/fastf1_cache')
+fastf1.Cache.enable_cache('data/fastf1_cache')
 
 # For 2026, qualifying hasn't happened yet, so we ALWAYS use sample data
 print("⚠️  2026 qualifying data not available yet")
@@ -74,7 +74,7 @@ print()
 print("Loading 2025 season statistics...")
 
 # Load historical data to calculate baseline features
-historical = pd.read_csv('../data/features_2022_2025.csv')
+historical = pd.read_csv('data/features_2022_2025.csv')
 end_of_2025 = historical[historical['Year'] == 2025].copy()
 
 # Calculate each driver's 2025 end-of-season stats
@@ -197,7 +197,7 @@ timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 predictions['Race'] = RACE_NAME
 predictions['Timestamp'] = timestamp
 
-output_file = f'../predictions/race_{RACE_NUMBER:02d}_{RACE_NAME.replace(" ", "_").lower()}_prediction.csv'
+output_file = f'predictions/race_{RACE_NUMBER:02d}_{RACE_NAME.replace(" ", "_").lower()}_prediction.csv'
 predictions.to_csv(output_file, index=False)
 
 print(f"\n✅ Predictions saved to: {output_file}")
