@@ -1,17 +1,17 @@
-# 🏎️ F1 2026 Podium Predictor
+# F1 2026 Podium Predictor 🏎️ 
 
 Machine learning model that predicts Formula 1 race podium finishers for the 2026 season races using XGBoost trained on historical race data (2022-2025).
 
-## 🎯 Project Overview
+## Project Overview
 
 This project was built to predict podium results for the **2026 F1 season**, which features the biggest regulation changes in F1 history. The model explicitly handles the uncertainty of a regulation reset by:
-- Weighting recent seasons more heavily in training
+- Weighting recent seasons more heavily in training (2025 = 10x, 2024 = 5x, 2023 = 2x, 2022 = 1x)
 - Dampening constructor advantages early in the season
 - Adapting predictions as 2026 race data accumulates
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 Trained on 1,838 driver-race records from 2022-2025:
 
@@ -26,7 +26,7 @@ Trained on 1,838 driver-race records from 2022-2025:
 
 ---
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Features Engineered (12 total)
 - **Qualifying Performance:** Grid position, quali gap to pole
@@ -50,7 +50,7 @@ Trained on 1,838 driver-race records from 2022-2025:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 f1_2026_predictions/
 ├── data/
@@ -72,7 +72,7 @@ f1_2026_predictions/
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### Setup
 ```bash
@@ -115,16 +115,16 @@ Top predictive features discovered:
 4. **Circuit History** (0.47) - Track-specific knowledge persists
 
 ### 2026 Regulation Impact
-The model handles the 2026 regulation reset by:
-- Reducing trust in the constructor hierarchy early in the season
-- Increasing weight on driver skill vs car performance
-- Updating confidence as real 2026 data accumulates
+The model handles the unprecedented 2026 regulation reset by:
+- Reducing trust in constructor hierarchy early in the season (40% dampening)
+- Prioritising driver skill metrics over car-dependent features
+- Updating confidence as real 2026 data accumulates race-by-race
 
 ---
 
 ## 📈 Future Improvements
 
-- [ ] Incorporate weather data (rain = massive equaliser)
+- [ ] Incorporate weather data
 - [ ] Add pit stop strategy modelling
 - [ ] Real-time updates during race weekends
 - [ ] Web dashboard for interactive predictions
@@ -142,7 +142,6 @@ MIT License - feel free to use for learning or personal projects
 ## 🙏 Acknowledgments
 
 - **FastF1** - Amazing open-source F1 data library
-- **F1 Community** - For making data accessible
 
 ---
 
