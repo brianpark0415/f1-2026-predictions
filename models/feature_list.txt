@@ -1,0 +1,12 @@
+GridPosition
+QualiPosition
+QualiGapToPole
+AvgFinishLast5
+AvgQualiLast5
+PointsLast3
+ConstructorAvgFinishLast3
+ConstructorPodiumRateSeason
+DriverCircuitAvgFinish
+DNFRateSeason
+PodiumRateSeason
+ConstructorChampPos
