@@ -39,11 +39,36 @@ print(f"✅ Model loaded with {len(feature_cols)} features\n")
 print(f"Fetching {YEAR} qualifying results...")
 fastf1.Cache.enable_cache('data/fastf1_cache')
 
-# ============================================================
-# GET QUALIFYING RESULTS
-# ============================================================
-print(f"Fetching {YEAR} qualifying results...")
-fastf1.Cache.enable_cache('data/fastf1_cache')
+# when Saturday qualifying finishes, update using the following code:
+"""
+try:
+    quali_session = fastf1.get_session(YEAR, RACE_NUMBER, 'Q')
+    quali_session.load(telemetry=False, weather=False, messages=False)
+    
+    quali = quali_session.results[['Abbreviation', 'TeamName', 
+                                    'Position', 'Q1', 'Q2', 'Q3']].copy()
+    quali.columns = ['Driver', 'Team', 'QualiPosition', 'Q1', 'Q2', 'Q3']
+    
+    # Calculate best qualifying time and gap to pole
+    def best_quali_time(row):
+        for t in [row['Q3'], row['Q2'], row['Q1']]:
+            if pd.notna(t):
+                return t.total_seconds()
+        return None
+    
+    quali['BestQualiTime'] = quali.apply(best_quali_time, axis=1)
+    pole_time = quali['BestQualiTime'].min()
+    quali['QualiGapToPole'] = quali['BestQualiTime'] - pole_time
+    quali['GridPosition'] = quali['QualiPosition']
+    
+    print(f"✅ Live qualifying data loaded for {len(quali)} drivers\n")
+    print(quali[['Driver', 'Team', 'QualiPosition']].head(10))
+    
+except Exception as e:
+    print(f"⚠️  Could not load qualifying: {e}")
+    print("Using sample data...\n")
+    # Keep the sample data fallback here
+"""
 
 # For 2026, qualifying hasn't happened yet, so we ALWAYS use sample data
 print("⚠️  2026 qualifying data not available yet")
