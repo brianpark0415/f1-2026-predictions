@@ -71,6 +71,7 @@ except Exception as e:
 """
 
 # For 2026, qualifying hasn't happened yet, so we ALWAYS use sample data
+# delete this line after first race and use data from that race
 print("⚠️  2026 qualifying data not available yet")
 print("Using sample data based on 2025 form...\n")
 
