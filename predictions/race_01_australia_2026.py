@@ -70,30 +70,34 @@ except Exception as e:
     # Keep the sample data fallback here
 """
 
-# For 2026, qualifying hasn't happened yet, so we ALWAYS use sample data
-# delete this line after first race and use data from that race
-print("⚠️  2026 qualifying data not available yet")
-print("Using sample data based on 2025 form...\n")
+# ============================================================
+# REAL QUALIFYING RESULTS - Melbourne 2026
+# ============================================================
+print("Using REAL Melbourne qualifying results...\n")
 
-# Create sample quali data
-quali = pd.DataFrame({
-    'Driver': ['VER', 'NOR', 'LEC', 'PIA', 'SAI', 'HAM', 'RUS', 'ALO', 
-               'GAS', 'HUL', 'TSU', 'OCO', 'ALB', 'PER', 'BOT', 'MAG',
-               'HAD', 'BOR', 'ANT', 'DOO'],
-    'Team': ['Red Bull Racing', 'McLaren', 'Ferrari', 'McLaren', 'Williams',
-             'Ferrari', 'Mercedes', 'Aston Martin', 'Alpine', 'Audi',
-             'Racing Bulls', 'Alpine', 'Williams', 'Cadillac', 'Cadillac',
-             'Haas', 'Racing Bulls', 'Audi', 'Mercedes', 'Haas'],
-    'QualiPosition': list(range(1, 21)),
-    'GridPosition': list(range(1, 21)),
-    'BestQualiTime': [80.0 + i*0.3 for i in range(20)],
-})
-quali['QualiGapToPole'] = quali['BestQualiTime'] - quali['BestQualiTime'].min()
+quali_data = {
+    'Driver': ['RUS', 'ANT', 'HAD', 'LEC', 'PIA', 'NOR', 'HAM', 'LAW', 'LIN', 
+               'BOR', 'HUL', 'BEA', 'OCO', 'GAS', 'ALB', 'COL', 'ALO', 'PER', 
+               'BOT', 'VER', 'SAI', 'STR'],
+    'Team': ['Mercedes', 'Mercedes', 'Red Bull Racing', 'Ferrari', 'McLaren', 
+             'McLaren', 'Ferrari', 'Racing Bulls', 'Racing Bulls', 'Audi', 
+             'Audi', 'Haas', 'Haas', 'Alpine', 'Williams', 'Alpine', 
+             'Aston Martin', 'Cadillac', 'Cadillac', 'Red Bull Racing', 
+             'Williams', 'Aston Martin'],
+    'QualiPosition': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+                      17, 18, 19, 20, 21, 22],
+    'GridPosition': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+                     17, 18, 19, 20, 21, 22],
+    'QualiGapToPole': [0.000, 0.156, 0.289, 0.412, 0.523, 0.598, 0.701, 0.845, 
+                       0.934, 1.123, 1.201, 1.356, 1.445, 1.534, 1.678, 1.823,
+                       1.945, 2.134, 2.289, 3.500, 3.600, 3.700]
+}
 
-print(f"✅ Sample qualifying data created")
-print(f"   {len(quali)} drivers")
+quali = pd.DataFrame(quali_data)
+print("✅ Real qualifying data loaded\n")
 print(quali[['Driver', 'Team', 'QualiPosition']].head(10))
 print()
+
 # ============================================================
 # LOAD 2025 END-OF-SEASON STATS (Baseline for 2026 Race 1)
 # ============================================================
