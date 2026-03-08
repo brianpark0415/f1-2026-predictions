@@ -16,14 +16,14 @@ This project was built to predict podium results for the **2026 F1 season**, whi
 2026 Australian Grand Prix Prediction Result (with qualifying results, see commit on 08/03/2026)
 
 🏁  PREDICTED PODIUM - Australian Grand Prix
-🥇  RUS - Mercedes 
-🥈  LEC - Ferrari  
-🥉  PIA - McLaren
+- 🥇  RUS - Mercedes 
+- 🥈  LEC - Ferrari
+- 🥉  PIA - McLaren
 
 🏁  ACTUAL PODIUM - Australian Grand Prix
-🥇  RUS - Mercedes 
-🥈  ANT - Mercedes
-🥉  LEC - Ferrari
+- 🥇  RUS - Mercedes
+- 🥈  ANT - Mercedes
+- 🥉  LEC - Ferrari
 
 Result Summary & Notes:
 - 2/3 correct predictions (67%)
