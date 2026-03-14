@@ -1837,3 +1837,25 @@ DriverNumber,Abbreviation,TeamName,GridPosition,Position,Status,Points,Year,Race
 30,LAW,Racing Bulls,13.0,18.0,Lapped,0.0,2025,24,Abu Dhabi Grand Prix,Yas Island
 10,GAS,Alpine,19.0,19.0,Lapped,0.0,2025,24,Abu Dhabi Grand Prix,Yas Island
 43,COL,Alpine,20.0,20.0,Lapped,0.0,2025,24,Abu Dhabi Grand Prix,Yas Island
+63,RUS,Mercedes,1.0,1.0,Finished,25.0,2026,1,Australian Grand Prix,Albert Park
+12,ANT,Mercedes,2.0,2.0,Finished,18.0,2026,1,Australian Grand Prix,Albert Park
+16,LEC,Ferrari,4.0,3.0,Finished,15.0,2026,1,Australian Grand Prix,Albert Park
+4,NOR,McLaren,6.0,4.0,Finished,12.0,2026,1,Australian Grand Prix,Albert Park
+81,PIA,McLaren,5.0,,Retired,0.0,2026,1,Australian Grand Prix,Albert Park
+1,VER,Red Bull Racing,20.0,6.0,Finished,8.0,2026,1,Australian Grand Prix,Albert Park
+44,HAM,Ferrari,7.0,7.0,Finished,6.0,2026,1,Australian Grand Prix,Albert Park
+25,HAD,Red Bull Racing,3.0,8.0,Finished,4.0,2026,1,Australian Grand Prix,Albert Park
+30,LAW,Racing Bulls,8.0,9.0,Finished,2.0,2026,1,Australian Grand Prix,Albert Park
+35,LIN,Racing Bulls,9.0,10.0,Finished,1.0,2026,1,Australian Grand Prix,Albert Park
+27,BOR,Audi,10.0,11.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+87,HUL,Audi,11.0,12.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+50,BEA,Haas,12.0,13.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+31,OCO,Haas,13.0,14.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+10,GAS,Alpine,14.0,15.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+43,COL,Alpine,16.0,16.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+14,ALO,Aston Martin,17.0,17.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+55,PER,Cadillac,18.0,18.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+77,BOT,Cadillac,19.0,19.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+18,STR,Aston Martin,22.0,20.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+2,SAI,Williams,21.0,21.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+23,ALB,Williams,15.0,22.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
