@@ -31,6 +31,14 @@ Result Summary & Notes:
 - VER P6: The model predicted P7 for VER, quite close
 - PIA DNF pre-race was a surprise to everyone
 
+2026 Chinese Grand Prix Prediction Result (with qualifying results, see commit on 15/03/2026)
+
+🏁  PREDICTED PODIUM - Australian Grand Prix
+- 🥇  LEC - Ferrari 
+- 🥈  RUS - Mercedes
+- 🥉  ANT - Mercedes
+
+
 ## Model Performance
 
 Trained on 1,838 driver-race records from 2022-2025:
@@ -87,6 +95,7 @@ f1_2026_predictions/
 │   └── feature_list.txt           # Model feature names
 ├── predictions/
 │   └── race_01_australia_2026.py  # Race prediction script
+|   add_race_results.py            # Update model using up-to-date 2026 results (will likely use fastf1 API in the future for this)
 └── README.md
 ```
 
