@@ -3,7 +3,7 @@ import pandas as pd
 print("Adding 2026 Australian Grand Prix results...\n")
 
 # ============================================================
-# RACE RESULTS - Use correct column names!
+# RACE RESULTS 
 # ============================================================
 
 race_1_results = {
@@ -62,4 +62,3 @@ updated_quali.to_csv('data/qualifying_2022_2025.csv', index=False)
 
 print("✅ Added qualifying results!")
 print(f"   Total qualifying sessions: {len(updated_quali)}")
-print("\n✅ Done! Now re-run feature engineering notebook.\n")
