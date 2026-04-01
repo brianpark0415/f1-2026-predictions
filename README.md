@@ -13,30 +13,7 @@ This project was built to predict podium results for the **2026 F1 season**, whi
 
 ## Current Prediction Record for 2026 season
 
-2026 Australian Grand Prix Prediction Result (with qualifying results, see commit on 08/03/2026)
-
-🏁  PREDICTED PODIUM - Australian Grand Prix
-- 🥇  RUS - Mercedes 
-- 🥈  LEC - Ferrari
-- 🥉  PIA - McLaren
-
-🏁  ACTUAL PODIUM - Australian Grand Prix
-- 🥇  RUS - Mercedes
-- 🥈  ANT - Mercedes
-- 🥉  LEC - Ferrari
-
-Result Summary & Notes:
-- 2/3 correct predictions (67%)
-- ANT P2: The model seemed to have penalised him for being a rookie
-- VER P6: The model predicted P7 for VER, quite close
-- PIA DNF pre-race was a surprise to everyone
-
-2026 Chinese Grand Prix Prediction Result (with qualifying results, see commit on 15/03/2026)
-
-🏁  PREDICTED PODIUM - Australian Grand Prix
-- 🥇  LEC - Ferrari 
-- 🥈  RUS - Mercedes
-- 🥉  ANT - Mercedes
+see predictions_and_results
 
 
 ## Model Performance
