@@ -1859,3 +1859,25 @@ DriverNumber,Abbreviation,TeamName,GridPosition,Position,Status,Points,Year,Race
 18,STR,Aston Martin,22.0,20.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
 2,SAI,Williams,21.0,21.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
 23,ALB,Williams,15.0,22.0,Finished,0.0,2026,1,Australian Grand Prix,Albert Park
+12,ANT,Mercedes,1.0,1.0,Finished,25.0,2026,3,Japanese Grand Prix,Suzuka
+81,PIA,McLaren,3.0,2.0,Finished,18.0,2026,3,Japanese Grand Prix,Suzuka
+16,LEC,Ferrari,4.0,3.0,Finished,15.0,2026,3,Japanese Grand Prix,Suzuka
+63,RUS,Mercedes,2.0,4.0,Finished,12.0,2026,3,Japanese Grand Prix,Suzuka
+4,NOR,McLaren,5.0,5.0,Finished,10.0,2026,3,Japanese Grand Prix,Suzuka
+44,HAM,Ferrari,6.0,6.0,Finished,8.0,2026,3,Japanese Grand Prix,Suzuka
+10,GAS,Alpine,7.0,7.0,Finished,6.0,2026,3,Japanese Grand Prix,Suzuka
+1,VER,Red Bull Racing,11.0,8.0,Finished,4.0,2026,3,Japanese Grand Prix,Suzuka
+30,LAW,Racing Bulls,14.0,9.0,Finished,2.0,2026,3,Japanese Grand Prix,Suzuka
+31,OCO,Haas,12.0,10.0,Finished,1.0,2026,3,Japanese Grand Prix,Suzuka
+87,HUL,Audi,13.0,11.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+25,HAD,Red Bull Racing,8.0,12.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+27,BOR,Audi,9.0,13.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+35,LIN,Racing Bulls,10.0,14.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+2,SAI,Williams,16.0,15.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+43,COL,Alpine,15.0,16.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+55,PER,Cadillac,19.0,17.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+14,ALO,Aston Martin,21.0,18.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+77,BOT,Cadillac,20.0,19.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+23,ALB,Williams,17.0,20.0,Finished,0.0,2026,3,Japanese Grand Prix,Suzuka
+18,STR,Aston Martin,22.0,,Retired,0.0,2026,3,Japanese Grand Prix,Suzuka
+50,BEA,Haas,18.0,,Retired,0.0,2026,3,Japanese Grand Prix,Suzuka
