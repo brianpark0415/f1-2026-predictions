@@ -1,1 +1,59 @@
+## Current Prediction Record for 2026 season
+
+**2026 Australian Grand Prix Prediction Result (with qualifying results, see commit on 08/03/2026)**
+
+🏁  PREDICTED PODIUM - Australian Grand Prix
+- 🥇  RUS - Mercedes 
+- 🥈  LEC - Ferrari
+- 🥉  PIA - McLaren
+
+🏁  ACTUAL PODIUM - Australian Grand Prix
+- 🥇  RUS - Mercedes
+- 🥈  ANT - Mercedes
+- 🥉  LEC - Ferrari
+
+Result Summary & Notes:
+- 2/3 correct predictions (67%)
+- ANT P2: The model seemed to have penalised him for being a rookie
+- VER P6: The model predicted P7 for VER, quite close
+- PIA DNF pre-race was a surprise to everyone
+
+**2026 Chinese Grand Prix Prediction Result (with qualifying results, see commit on 15/03/2026)**
+
+🏁  PREDICTED PODIUM - Chinese Grand Prix
+- 🥇  LEC - Ferrari 
+- 🥈  RUS - Mercedes
+- 🥉  ANT - Mercedes
+
+🏁  ACTUAL PODIUM - Chinese Grand Prix
+- 🥇  ANT - Mercedes
+- 🥈  RUS - Mercedes
+- 🥉  HAM - Ferrari
+
+Result Summary & Notes:
+- 2/3 correct prediction (67%)
+- ANT P1: Predicted P3 -> actual P1. Model accounting for results from race 1, 2026
+- HAM P3: The model predicted P5 for HAM
+- LEC ended up P4, just missing out on Podium
+
+**2026 Japanese Grand Prix Prediction Result (with qualifying results)**
+
+🏁  PREDICTED PODIUM - Japanese Grand Prix
+- 🥇  LEC - Ferrari 
+- 🥈  RUS - Mercedes
+- 🥉  ANT - Mercedes
+
+🏁  ACTUAL PODIUM - Japanese Grand Prix
+- 🥇  ANT - Mercedes
+- 🥈  PIA - McLaren
+- 🥉  LEC - Ferrari
+
+Result Summary & Notes:
+- 1/3 correct prediction
+- Broadening prediction results to top 6, model performed well:
+  - Predicted: LEC, RUS, ANT, PIA, HAM, NOR
+  - Actual: ANT, PIA, LEC, RUS, NOR, HAM
+- PIA P2: Finally a start. Will have meaningful impact on the model's future predictions
+
+
 
